@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsFundamentals.StackPage"
+             Padding="0,0,0,0">
+    <StackLayout VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 Orientation="Horizontal"
+                 Spacing="20"
+                 Padding="40"
+                 BackgroundColor="RosyBrown">
+        <StackLayout BackgroundColor="Yellow">
+            <BoxView Color="Black"/>
+            <Label Text="Label 1" BackgroundColor="GreenYellow"/>
+        </StackLayout>
+        <Label Text="Label 2" BackgroundColor="GreenYellow"/>
+        <Label Text="Label 3" BackgroundColor="GreenYellow"/>
+    </StackLayout>
+</ContentPage>

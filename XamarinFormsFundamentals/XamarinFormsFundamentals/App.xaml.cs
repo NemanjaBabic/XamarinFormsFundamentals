@@ -10,7 +10,7 @@ namespace XamarinFormsFundamentals
         {
             InitializeComponent();
 
-            MainPage = new QuotePage();
+            MainPage = new PhotographerPage();
         }
 
         protected override void OnStart()

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsFundamentals.PhotographerPage"
+             BackgroundColor="White">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0,20,0,0" Android="0,0,0,0"/>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="nyc_photographer"
+                   HorizontalOptions="Start"
+                   Padding="10"
+                   TextColor="Black"/>
+            <Image Source="photographer.PNG"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Like"
+                        HorizontalOptions="Start"
+                        TextColor="#127ac7"
+                        BackgroundColor="White"/>
+                <Button Text="Comment"
+                        HorizontalOptions="Start"
+                        TextColor="#127ac7"
+                        BackgroundColor="White"/>
+                <Button Text="Share"
+                        HorizontalOptions="Start"
+                        TextColor="#127ac7"
+                        BackgroundColor="White"/>
+            </StackLayout>
+            <StackLayout Padding="10">
+                <BoxView Color="#f0f0f0" HeightRequest="1"/>
+                <Label Text="700 likes"
+                       TextColor="Black"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"/>
+                <Label Text="This is a shot yesterday in Skanor, Sweden, when driving home, from a couple of days of work in Denmark."
+                       HorizontalOptions="StartAndExpand"/>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
