@@ -10,7 +10,7 @@ namespace XamarinFormsFundamentals
         {
             InitializeComponent();
 
-            MainPage = new PhotographerPage();
+            MainPage = new WelcomeGridPage();
         }
 
         protected override void OnStart()
