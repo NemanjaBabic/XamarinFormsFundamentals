@@ -10,7 +10,7 @@ namespace XamarinFormsFundamentals
         {
             InitializeComponent();
 
-            MainPage = new RelaxPage();
+            MainPage = new CreditRelativePage();
         }
 
         protected override void OnStart()

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsFundamentals.CreditRelativePage">
+    <RelativeLayout>
+        <BoxView BackgroundColor="Silver"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression Property=Width, Type=RelativeToParent, Factor=1}"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression Property=Height, Type=RelativeToParent, Factor=0.3}"
+                 x:Name="banner"/>
+        <StackLayout HorizontalOptions="Center"
+                     VerticalOptions="Center"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Property=Width, Type=RelativeToParent, Factor=1}"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Property=Height, Type=RelativeToParent, Factor=0.3}">
+            <Label Text="$11.95"
+                   FontSize="60"
+                   FontAttributes="Bold"
+                   TextColor="#33353a"/>
+            <Button Text="Add $7.99 Credit"
+                    BackgroundColor="#1695A3"
+                    CornerRadius="20"
+                    HeightRequest="40"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    TextColor="White"/>
+        </StackLayout>
+        <StackLayout HorizontalOptions="Center"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Property=Width, Type=RelativeToParent, Factor=1}"
+                     RelativeLayout.YConstraint ="{ConstraintExpression Property=Height, Type=RelativeToView, ElementName=banner, Factor=1, Constant=30}"
+                     Spacing="20">
+            <Label Text="Why pay for credit?"
+                   FontSize="15"
+                   FontAttributes="Bold"
+                   TextColor="#33353a"
+                   HorizontalOptions="Center"/>
+            <Label HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="13" TextColor="#33353a">
+Because you can reach people who aren’t on
+SkyApp by calling mobile and landline
+numbers, or spending SMS, at low-cost rates.
+            </Label>
+        </StackLayout>
+    </RelativeLayout>
+</ContentPage>
