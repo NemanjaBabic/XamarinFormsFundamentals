@@ -10,7 +10,7 @@ namespace XamarinFormsFundamentals
         {
             InitializeComponent();
 
-            MainPage = new ImageGalleryPage();
+            MainPage = new ListExercisePage();
         }
 
         protected override void OnStart()

@@ -11,10 +11,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\avatar1.png" />
+    <None Remove="Images\avatar2.png" />
+    <None Remove="Images\avatar3.png" />
+    <None Remove="Images\avatar4.png" />
     <None Remove="Images\background.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Images\avatar1.png" />
+    <EmbeddedResource Include="Images\avatar2.png" />
+    <EmbeddedResource Include="Images\avatar3.png" />
+    <EmbeddedResource Include="Images\avatar4.png" />
     <EmbeddedResource Include="Images\background.jpg" />
   </ItemGroup>
 
@@ -48,6 +56,9 @@
     <EmbeddedResource Update="ImagePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="ListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="PhotographerPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -72,5 +83,9 @@
     <EmbeddedResource Update="WelcomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>
