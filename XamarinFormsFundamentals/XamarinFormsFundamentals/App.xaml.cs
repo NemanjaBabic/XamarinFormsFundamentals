@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFormsFundamentals.Navigation;
 
 namespace XamarinFormsFundamentals
 {
@@ -10,7 +11,11 @@ namespace XamarinFormsFundamentals
         {
             InitializeComponent();
 
-            MainPage = new ListExercisePage();
+            MainPage = new NavigationPage(new HierarchicalNavigationWelcomePage())
+            {
+                BarBackgroundColor = Color.DarkGray,
+                BarTextColor = Color.White,
+            };
         }
 
         protected override void OnStart()
