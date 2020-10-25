@@ -19,7 +19,8 @@ namespace XamarinFormsFundamentals.Navigation
 
         async private void Button_Clicked(object sender, EventArgs e)
         {
-            await this.Navigation.PushAsync(new HierarchicalNavigationIntroductionPage());
+            //await this.Navigation.PushAsync(new HierarchicalNavigationIntroductionPage());
+            await this.Navigation.PushModalAsync(new HierarchicalNavigationIntroductionPage());
         }
     }
 }

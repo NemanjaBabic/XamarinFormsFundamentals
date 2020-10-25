@@ -19,7 +19,8 @@ namespace XamarinFormsFundamentals.Navigation
 
         async private void Button_Clicked(object sender, EventArgs e)
         {
-            await this.Navigation.PopAsync();
+            //await this.Navigation.PopAsync();
+            await this.Navigation.PopModalAsync(); // Modal page. Enforces the user to take some action.
         }
 
         protected override bool OnBackButtonPressed()
