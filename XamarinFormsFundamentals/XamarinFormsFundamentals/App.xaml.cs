@@ -11,11 +11,13 @@ namespace XamarinFormsFundamentals
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new HierarchicalNavigationWelcomePage())
-            {
-                BarBackgroundColor = Color.DarkGray,
-                BarTextColor = Color.White,
-            };
+            //MainPage = new NavigationPage(new HierarchicalNavigationWelcomePage())
+            //{
+            //    BarBackgroundColor = Color.DarkGray,
+            //    BarTextColor = Color.White,
+            //};
+
+            MainPage = new ContactsPage();
         }
 
         protected override void OnStart()
