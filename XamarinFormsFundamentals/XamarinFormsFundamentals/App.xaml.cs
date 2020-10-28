@@ -17,7 +17,7 @@ namespace XamarinFormsFundamentals
             //    BarTextColor = Color.White,
             //};
 
-            MainPage = new WelcomeCarouselPage();
+            MainPage = new WelcomePopupPage();
         }
 
         protected override void OnStart()
