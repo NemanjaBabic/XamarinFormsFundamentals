@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace:XamarinFormsFundamentals.Extensions"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsFundamentals.FormsAndSettingPages.TableViewPage"
+             Visual="Material">
+    <TableView Intent="Form" HasUnevenRows="True">
+        <TableRoot>
+            <TableSection Title="Basics">
+                <TextCell Text="Name" Detail="Nemanja Babic"/>
+                <EntryCell Label="Title" Placeholder="(eg Shopping)"/>
+                <SwitchCell Text="Notifications" On="True"/>
+                <!-- Custom Cell -->
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" Padding="13,10,10,10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Label Text="Starts" VerticalOptions="Center"/>
+                        <DatePicker Date="1 Jan 2020" HorizontalOptions="EndAndExpand" TextColor="WhiteSmoke" VerticalOptions="Center"/>
+                    </StackLayout>
+                </ViewCell>
+                <!-- Custom Cell (re-used)-->
+                <local:DateCell Label="Ends"/>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>
