@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="XamarinFormsFundamentals.FormsAndSettingPages.DateTimePickerPage"
+             Visual="Material"
+             Padding="20">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+        <DatePicker Date="{x:Static sys:DateTime.Today}"
+                    Format="d MMM yyyy"
+                    MinimumDate="1 Jan 2020"
+                    MaximumDate="31 Dec 2020"
+                    TextColor="WhiteSmoke"
+                    BackgroundColor="#383838"
+                    DateSelected="DatePicker_DateSelected"/>
+        <TimePicker Time="13:00"
+                    TextColor="WhiteSmoke"
+                    BackgroundColor="#383838"/>
+    </StackLayout>
+</ContentPage>

@@ -17,7 +17,7 @@ namespace XamarinFormsFundamentals
             //    BarTextColor = Color.White,
             //};
 
-            MainPage = new FormsAndSettingPages.PickerPage();
+            MainPage = new FormsAndSettingPages.DateTimePickerPage();
         }
 
         protected override void OnStart()
