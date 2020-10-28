@@ -17,7 +17,7 @@ namespace XamarinFormsFundamentals
             //    BarTextColor = Color.White,
             //};
 
-            MainPage = new FormsAndSettingPages.StepperPage();
+            MainPage = new FormsAndSettingPages.EntryEditorPage();
         }
 
         protected override void OnStart()
