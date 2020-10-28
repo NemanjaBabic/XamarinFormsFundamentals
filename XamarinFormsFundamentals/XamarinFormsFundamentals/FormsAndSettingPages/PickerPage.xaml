@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsFundamentals.FormsAndSettingPages.PickerPage"
+             Visual="Material">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+        <Picker Title="Contact Method"
+                x:Name="contactMethods1"
+                SelectedIndexChanged="Picker1_SelectedIndexChanged"
+                TextColor="WhiteSmoke"
+                TitleColor="WhiteSmoke"
+                BackgroundColor="#383838">
+            <Picker.Items>
+                <x:String>SMS</x:String>
+                <x:String>Email</x:String>
+            </Picker.Items>
+        </Picker>
+        <Picker Title="Contact Method"
+                x:Name="contactMethods2"
+                SelectedIndexChanged="Picker2_SelectedIndexChanged"
+                TextColor="WhiteSmoke"
+                TitleColor="WhiteSmoke"
+                BackgroundColor="#383838">
+        </Picker>
+    </StackLayout>
+</ContentPage>
