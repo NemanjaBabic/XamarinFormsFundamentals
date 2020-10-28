@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsFundamentals.FormsAndSettingPages.SwitchPage"
+             Visual="Material">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Switch IsToggled="True"
+                Toggled="Switch_Toggled"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+        <Label Text="Content"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               x:Name="label"/>
+        <Switch IsToggled="True"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                x:Name="switch"/>
+        <Label Text="Content"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               IsVisible="{Binding Source={x:Reference switch}, Path=IsToggled}"/>
+    </StackLayout>
+</ContentPage>

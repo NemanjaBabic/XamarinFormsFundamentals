@@ -17,7 +17,7 @@ namespace XamarinFormsFundamentals
             //    BarTextColor = Color.White,
             //};
 
-            MainPage = new NavigationPage(new ToolbarItemsPage());
+            MainPage = new FormsAndSettingPages.SwitchPage();
         }
 
         protected override void OnStart()
