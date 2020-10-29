@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFormsFundamentals.FormsAndSettingPages;
 using XamarinFormsFundamentals.Navigation;
 
 namespace XamarinFormsFundamentals
@@ -17,7 +18,7 @@ namespace XamarinFormsFundamentals
             //    BarTextColor = Color.White,
             //};
 
-            MainPage = new FormsAndSettingPages.TableViewPage();
+            MainPage = new NavigationPage(new TableViewPage());
         }
 
         protected override void OnStart()

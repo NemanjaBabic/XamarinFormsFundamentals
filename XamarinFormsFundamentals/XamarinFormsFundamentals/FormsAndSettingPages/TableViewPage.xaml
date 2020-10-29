@@ -19,6 +19,18 @@
                 </ViewCell>
                 <!-- Custom Cell (re-used)-->
                 <local:DateCell Label="Ends"/>
+                <!-- Navigation Picker -->
+                <ViewCell Tapped="ViewCell_Tapped">
+                    <StackLayout Orientation="Horizontal" Padding="13,10,10,10">
+                        <Label Text="Contact Method" VerticalOptions="Center"/>
+                        <Label
+                            x:Name="contactMethod"
+                            VerticalOptions="Center"
+                            HorizontalOptions="EndAndExpand"
+                            Text="None"
+                            TextColor="WhiteSmoke"/>
+                    </StackLayout>
+                </ViewCell>
             </TableSection>
         </TableRoot>
     </TableView>
